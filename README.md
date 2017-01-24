@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?
-A: *Student should provide answer here*
+A: In the naked twins problem, we identify 2 boxes with 2 identical possible remaining digits in the same peer group. We use the logical constraints of the puzzle (1-9 in each row, column, and square) to further reduce the possible remaining digits in the rest of the peer group by eliminating the 2 digits from the naked twins boxes from consideration. After constraining the problem in this way, the set of possible solutions is reduced, and may be further constrained by iterating over other strategies (only_one, eliminate) again after implementing naked_twins, or at least shrinking the search space. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?
-A: *Student should provide answer here*
+A: In the original problem, the logical constraints of the puzzle (1-9 in each row, column and square) allow us to implement strategies so shrink the possible outcomes. By adding an additional diagonal constraint, the set of possible outcomes is shrunk even further when using strategies to minimize the possible outcomes (only_one, eliminate, naked_twins).
 
 ### Install
 
